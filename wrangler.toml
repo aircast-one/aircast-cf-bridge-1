@@ -1,0 +1,7 @@
+name = "aircast-cf-bridge-1"
+main = "src/worker.js"
+compatibility_date = "2026-10-24"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "cd04dc5555364f689eb4387d86d8b312"

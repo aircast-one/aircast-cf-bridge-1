@@ -1,0 +1,25 @@
+{
+  "name": "aircast-cf-bridge-1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public WHEP viewer for Cloudflare-Realtime cameras, independent of aircast-api",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "cloudflare": {
+    "bindings": {
+      "SIGN_KEY": {
+        "description": "Paste the **SIGN_KEY** from your Aircast device — Settings → Public viewer (Cloudflare). It signs the public watch links."
+      },
+      "DEVICE_TOKEN": {
+        "description": "Paste the **DEVICE_TOKEN** from your Aircast device — Settings → Public viewer (Cloudflare). It lets the device report the live session."
+      }
+    }
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}

@@ -1,0 +1,8 @@
+# The "Deploy to Cloudflare" flow prompts for these and stores them as Worker
+# secrets. Both are shown in your Aircast device — Settings → Public viewer
+# (Cloudflare). Paste them when asked.
+#
+# CF_APP_SECRET is intentionally NOT listed: the device sends its Cloudflare app
+# secret automatically, so you don't set it here.
+SIGN_KEY=
+DEVICE_TOKEN=
